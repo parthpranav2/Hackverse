@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">HackVerse</string>
+
+    <string name="lblgreet">Hey, Parth!</string>
+
+    <string name="lblidentifi">Not YP12311?</string>
+
+    <string name="lbldiscript">
+        We\'re so glad to see you again. Enter your 4-digit PIN
+    </string>
+
+    <string name="lblname">
+        P
+    </string>
+
+    <string name="name">
+        Parth Paragkumar Shroff
+    </string>
+
+    <string name="username">
+        shroff12324
+    </string>
+
+    <string name="email">
+        parthpshroff@gmail.com
+    </string>
+
+    <string name="lblapptag">
+        \u00f0\u009d\u0099\u00b7\u00f0\u009d\u009a\u008a\u00f0\u009d\u009a\u008c\u00f0\u009d\u009a\u0094\u00f0\u009d\u009a\u009f\u00f0\u009d\u009a\u008e\u00f0\u009d\u009a\u009b\u00f0\u009d\u009a\u009c\u00f0\u009d\u009a\u008e
+    </string>
+
+    <string name="lblsignin">
+        Sign In
+    </string>
+
+    <string name="appinfo">
+        App version 1.0.00\n\nDeveloper \nParth Shroff
+    </string>
+
+    <string name="select">
+        Select Option
+    </string>
+
+    <string name="lblcontinue">
+        Continue
+    </string>
+
+    <string name="lbllogin">
+        LogIn
+    </string>
+
+    <string name="lblpin">
+    ----
+    </string>
+
+    <string name="lblemail">
+        E-mail
+    </string>
+
+    <string name="lblpass">
+        Password
+    </string>
+
+    <string name="lblor">
+            OR
+    </string>
+
+    <string name="continue_wi">
+        Continue with Google
+    </string>
+
+    <string name="lnklblcreat">
+            Create Account
+    </string>
+
+    <string name="hv">
+        HV
+    </string>
+
+    <string name="lblgender">
+        Gender
+    </string>
+
+    <string name="lblpin1">
+        Pin
+    </string>
+
+    <string name="already_hav">
+        Already have an account ?
+    </string>
+
+    <string name="linklogin">
+        LogIn
+    </string>
+
+    <string name="cmbgender">
+        Select Option
+    </string>
+
+    <string name="lblsignup">
+        SignUp
+    </string>
+
+    <string name="home">
+        Home
+    </string>
+
+    <string name="active_events">
+        ActiveEvents
+    </string>
+
+    <string name="portfolio">
+        Portfolio
+    </string>
+
+    <string name="add_hackathon">
+        AddHackathon
+    </string>
+
+    <string name="counter">
+        1
+    </string>
+
+    <string name="InvalidPin">
+        Only 4 attempts are left.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

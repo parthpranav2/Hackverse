@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vwcard"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/teammembertagcardbody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8D1D1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <RelativeLayout
+                android:id="@+id/teammembertagcardtag"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="#EB7167"/>
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/grouprecvwuserico"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/txtidentityiconcardG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P"
+                    android:textSize="30sp"
+                    android:textColor="#2C4B7A"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:id="@+id/txtnamecardG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parth Paragkumar Shroff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:id="@+id/txtusernamecardG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="shroff12324"
+                    android:textColor="#2D394C"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:id="@+id/txtuseremailcardG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="parthpshroff@gmail.com"
+                    android:textColor="#2D394C"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:id="@+id/txtLeaderTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leader"
+                    android:textColor="#338D56"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
