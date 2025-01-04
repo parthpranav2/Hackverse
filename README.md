@@ -61,3 +61,11 @@ Functionality of Event details fragment (Bottom sheet fragment)
 14.Like
 15.Bookmark
 
+-Register team
+1. team name
+2. Invite friends (count <= max team size)
+3. register team
+
+-Realtime Team Details
+1. list of registered and active invitation candidates 
+
