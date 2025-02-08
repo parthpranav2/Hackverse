@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="380dp"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bsfragmentuserdesign"
+        >
+    <View
+        android:layout_width="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="4dp"
+        android:background="@drawable/notch"
+        />
+
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:title="Hack Verse"
+        app:collapsedTitleTextAppearance="@style/CollapsedTitle"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle_background_user"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="P"
+                        android:textSize="35sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/txtPDName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parth Paragkumar Shroff"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/linedarkhorizontal" />
+
+
+
+
+            <!-- Player Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Organisation"
+                android:textColor="#A8A8A8"
+                android:textSize="14sp"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IIT Dhanbad"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Domain"
+                    android:textColor="#A8A8A8"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Engineering"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="#A8A8A8"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtPDGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/butRemoveTeammate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Remove Teammate"
+                android:background="@drawable/btnred"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </LinearLayout>
+</LinearLayout>

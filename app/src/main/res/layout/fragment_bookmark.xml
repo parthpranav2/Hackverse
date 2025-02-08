@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/fragment_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookmarkFragment"
+    android:background="@color/dark">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recvwbookmarkedevents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/recycleractiveevents_items"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"/>
+
+</FrameLayout>

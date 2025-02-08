@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- drawable/vewpingrad.xml -->
+<vector
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt"
+android:width="412dp"
+android:height="209dp"
+android:viewportWidth="412"
+android:viewportHeight="209"
+    >
+<group>
+    <clip-path
+        android:pathData="M0 0H412V209H0V0Z"
+        />
+    <group
+        android:translateX="1"
+        android:translateY="0"
+        android:pivotX="206"
+        android:pivotY="104.5"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:rotation="90"
+        >
+        <path
+            android:pathData="M0 0V209H412V0"
+            >
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="103"
+                    android:startY="104.5"
+                    android:endX="309"
+                    android:endY="104.5"
+                    >
+                    <item
+                        android:color="#5D5D5D"
+                        android:offset="0"
+                        />
+                    <item
+                        android:color="#141920"
+                        android:offset="0.64"
+                        />
+                </gradient>
+            </aapt:attr>
+        </path>
+    </group>
+</group>
+</vector>

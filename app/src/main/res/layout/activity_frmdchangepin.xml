@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangePin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/btnback"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back_dark"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Change Pin"
+                    android:textSize="27sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/linedarkhorizontal" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Old Pin"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginTop="30dp"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:id="@+id/txtpinold"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/pinidle"
+                android:hint="@string/lblpin"
+                android:textColorHint="#969DA4"
+                android:letterSpacing="1.75"
+                android:textSize="30sp"
+                android:textColor="#969DA4"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:gravity="center"
+                android:maxLength="4"
+                android:inputType="textPassword"
+                />
+            <LinearLayout
+                android:id="@+id/linelincorrectoldpin"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/alert"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Incorrect old Pin"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13.33sp"
+                    android:textColor="#EB7167"
+                    android:gravity="center_vertical|end"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtnotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your new pin must be different from old pin"
+                android:textColor="#969DA4"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginTop="40dp"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Pin"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginTop="15dp"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:id="@+id/txtpinnew"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/pinidle"
+                android:hint="@string/lblpin"
+                android:textColorHint="#969DA4"
+                android:letterSpacing="1.75"
+                android:textSize="30sp"
+                android:textColor="#969DA4"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:gravity="center"
+                android:maxLength="4"
+                android:inputType="textPassword"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Re-enter New Pin"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginTop="20dp"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:id="@+id/txtpinrnew"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/pinidle"
+                android:hint="@string/lblpin"
+                android:textColorHint="#969DA4"
+                android:letterSpacing="1.75"
+                android:textSize="30sp"
+                android:textColor="#969DA4"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:gravity="center"
+                android:maxLength="4"
+                android:inputType="textPassword"
+                />
+
+            <LinearLayout
+                android:id="@+id/linelpinmismatch"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/alert"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="New Pin field and Re-enter pin field not matched"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13.33sp"
+                    android:textColor="#EB7167"
+                    android:gravity="center_vertical|end"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnchangepin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btndarkblue"
+                android:clickable="true"
+                android:text="Change Pin"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16.67sp"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

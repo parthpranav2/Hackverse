@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bsfragmentsubordinatedesign"
+        android:gravity="center_horizontal"
+        >
+    <View
+        android:layout_width="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="4dp"
+        android:background="@drawable/notch"
+        />
+
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:title="Hack Verse"
+        app:collapsedTitleTextAppearance="@style/CollapsedTitle"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/groupdiscard"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Warning"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Are you sure you wish to cancel your registration ? "
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Type ‘confirm’ to continue"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    />
+
+            <EditText
+                android:id="@+id/txtConfirmation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pinidle"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:gravity="center_vertical|left"
+                />
+
+            <TextView
+                android:id="@+id/txtprompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Invalid Input !"
+                android:textSize="15sp"
+                android:textColor="#EB7167"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/butcontinue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Continue"
+                android:background="@drawable/btndarkblue"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </LinearLayout>
+</LinearLayout>

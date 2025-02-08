@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".Registration">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#2A3546"
+            >
+            <ImageView
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/btncloseregistration"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/close"
+                />
+
+            <TextView
+                android:id="@+id/txtEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HACKVERSE"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehaviour">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team Name"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                />
+
+            <EditText
+                android:id="@+id/txtTeamName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/pinidle"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:gravity="center_vertical|left"
+                />
+            <TextView
+                android:id="@+id/txtregistrationnotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team with the same name already exists for this event!"
+                android:textSize="15sp"
+                android:textColor="#EB7167"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teammates"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/groupico"
+                    android:layout_marginLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="("
+                    android:textColor="@color/lightblue"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/txtteamsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/lightblue"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="3dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="@color/lightblue"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/txtmaxteamsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/lightblue"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="3dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=")"
+                    android:textColor="@color/lightblue"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(1st participant will be leader and the current account holder)"
+                android:textColor="#969DA4"
+                android:textSize="11sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Looking for Teammates"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    />
+
+                <Switch
+                    android:id="@+id/swtch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:track="@drawable/switchtracker"
+                    android:checked="false"
+                    android:thumb="@drawable/switchthumb"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recvwTeammates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                tools:listitem="@layout/recycleringroup_items"
+                />
+
+            <Button
+                android:id="@+id/butInvite"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btnlightblue"
+                android:text="Invite Friend"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnRegisterTeam"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btnlightgreen"
+                android:text="Register Team"
+                android:visibility="visible"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

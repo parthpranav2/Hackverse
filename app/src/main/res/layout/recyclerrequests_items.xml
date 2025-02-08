@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vwcard"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E2A36"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgevTheme"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/healthtech"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/overlay_layout"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_overlapidentitybubble_user"
+                    android:gravity="center"
+                    android:layout_gravity="bottom|end">
+
+                    <!-- Add child views here -->
+                    <TextView
+                        android:id="@+id/txtnameico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="P"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtcandidatename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name of person"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/txtcandidateemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email id"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    />
+                <TextView
+                    android:id="@+id/txtevname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name of Event"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    />
+                <TextView
+                    android:id="@+id/txttmname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name of team"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:id="@+id/butAccept"
+                    android:clickable="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/acceptrequest"
+                    android:elevation="10dp"
+                    android:layout_marginLeft="5dp"
+                    />
+                <ImageView
+                    android:id="@+id/butReject"
+                    android:clickable="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/rejectrequest"
+                    android:layout_marginLeft="5dp"
+                    android:elevation="10dp"/>
+            </LinearLayout>
+         </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <Button
+                    android:id="@+id/butTeamDetails"
+                    android:layout_width="160dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btnvlightblue"
+                    android:text="Team Details"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="20dp"/>
+                <Button
+                    android:id="@+id/butActiveEventDetails"
+                    android:layout_width="160dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btnvlightblue"
+                    android:text="Event Details"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

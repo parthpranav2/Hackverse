@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GlobalTeamsFragment"
+    android:background="@color/dark">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recvactiveteams"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/recyclerglobalteams_items"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        />
+</FrameLayout>

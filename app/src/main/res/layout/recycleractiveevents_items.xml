@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vwcard"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E2A36"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgthemeCard"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_width="89dp"
+            android:layout_height="90dp"
+            android:src="@drawable/healthtech"
+            android:layout_margin="8dp"
+            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                >
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtnameCard"
+                    android:text="Name of Hackathon"
+                    android:textSize="25sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTACard"
+                    android:layout_marginTop="2dp"
+                    android:text="Target audience"
+                    android:textSize="18sp"
+                    android:textColor="#E0E0E0"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtmodeCard"
+                    android:text="Mode"
+                    android:layout_marginTop="2dp"
+                    android:textSize="18sp"
+                    android:textColor="#E0E0E0"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/txtssdCard"
+                        android:layout_weight="1"
+                        android:text="Start date"
+                        android:textColor="#E0E0E0"
+                        android:gravity="end"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="-"
+                        android:textColor="#E0E0E0"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/txtsedCard"
+                        android:layout_weight="1"
+                        android:text="End date"
+                        android:textColor="#E0E0E0"
+                        android:gravity="start"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

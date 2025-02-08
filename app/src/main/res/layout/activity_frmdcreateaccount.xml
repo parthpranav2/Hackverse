@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark"
+        >
+
+        <LinearLayout
+            android:id="@+id/linelvmain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblappname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="@string/app_name"
+                android:textColor="#ffffff"
+                android:textSize="27sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/user_imgselector_dark"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/lblname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="20dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible"
+                        />
+                    <EditText
+                        android:id="@+id/txtname"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="22sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@null"
+                        android:hint="Enter Name"
+                        android:textColorHint="#FFFFFF"
+                        />
+                    <View
+                        android:id="@+id/lnname"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@drawable/lineidle"
+                        />
+
+                    <TextView
+                        android:id="@+id/lbluname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User Name"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible"
+                        />
+                    <EditText
+                        android:id="@+id/txtuname"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="22sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@null"
+                        android:hint="Enter User Name"
+                        android:textColorHint="#FFFFFF"
+                        />
+                    <View
+                        android:id="@+id/lnuname"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@drawable/lineidle"
+                        />
+
+                    <TextView
+                        android:id="@+id/lblemailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email Id"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible"
+                        />
+                    <EditText
+                        android:id="@+id/txtemailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="22sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@null"
+                        android:hint="Enter Email Id"
+                        android:textColorHint="#FFFFFF"
+                        />
+                    <View
+                        android:id="@+id/lnemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@drawable/lineidle"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/lblpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible"
+                        />
+                    <EditText
+                        android:id="@+id/txtpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="22sp"
+                        android:textColor="#FFFFFF"
+                        android:hint="Enter Password"
+                        android:background="@null"
+                        android:textColorHint="#FFFFFF"
+                        android:inputType="textPassword"
+                        />
+                    <View
+                        android:id="@+id/lnpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@drawable/lineidle"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/lblrepass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Re-enter Password"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible"
+                        />
+                    <EditText
+                        android:id="@+id/txtrepass"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="22sp"
+                        android:textColor="#FFFFFF"
+                        android:hint="Re-enter password"
+                        android:background="@null"
+                        android:textColorHint="#FFFFFF"
+                        android:inputType="textPassword"
+                        />
+
+                    <View
+                        android:id="@+id/lnrepass"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@drawable/lineidle" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/lblgender"
+                        android:textAppearance="@style/lblgender"
+                        android:gravity="top"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/rfgender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rbmale"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Male"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="15sp"
+                            android:buttonTint="#D9D9D9"
+                            android:textColor="#D9D9D9"
+                            android:textStyle="bold"/>
+
+                        <RadioButton
+                            android:id="@+id/rbfemale"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Female"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="15sp"
+                            android:buttonTint="#D9D9D9"
+                            android:textColor="#D9D9D9"
+
+                            android:textStyle="bold"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/lblpin1"
+                        android:textAppearance="@style/lblgender"
+                        android:gravity="top"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtpin1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/pinidle"
+                        android:hint="@string/lblpin"
+                        android:textColorHint="#969DA4"
+                        android:letterSpacing="1.75"
+                        android:textSize="30sp"
+                        android:textColor="#969DA4"
+                        android:inputType="textPassword"
+                        android:gravity="center"
+                        android:maxLength="4"
+                        />
+
+                    <Button
+                        android:id="@+id/btnsignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/btndarkblue"
+                        android:text="@string/lblsignup"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16.67sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="40dp">
+
+                        <!-- Auto layout, variables, and unit scale are not yet supported -->
+                        <TextView
+                            android:id="@+id/already_hav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/already_hav"
+                            android:textAppearance="@style/already_hav"
+                            android:gravity="top"
+                            />
+
+                        <!-- Auto layout, variables, and unit scale are not yet supported -->
+                        <TextView
+                            android:id="@+id/linklogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/linklogin"
+                            android:textAppearance="@style/linklogin"
+                            android:gravity="top"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

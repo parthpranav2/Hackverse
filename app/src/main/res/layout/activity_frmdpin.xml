@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserAuthentication">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/dark">
+
+        <View
+            android:id="@+id/vewpingrad"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gradvewpin" />
+
+        <LinearLayout
+            android:id="@+id/linelmain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/vewusernico"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle_background_user" />
+
+            <TextView
+                android:id="@+id/lblname"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="-84dp"
+                android:gravity="center"
+                android:text="@string/lblname"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblgreet"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:text="@string/lblgreet"
+                android:textAppearance="@style/lblgreet" />
+
+            <TextView
+                android:id="@+id/lblidentifi"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/lblidentifi"
+                android:textAppearance="@style/lblidentifi"
+                android:gravity="top"
+                />
+
+            <TextView
+                android:id="@+id/lbldiscript"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="25dp"
+                android:gravity="top"
+                android:text="@string/lbldiscript"
+                android:textAppearance="@style/lbldiscript"
+                android:textColor="#969DA4"
+                android:textSize="15.33sp" />
+
+            <EditText
+                android:id="@+id/txtpin1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/pinidle"
+                android:hint="@string/lblpin"
+                android:textColorHint="#969DA4"
+                android:letterSpacing="1.75"
+                android:textSize="30sp"
+                android:textColor="#969DA4"
+                android:gravity="center"
+                android:maxLength="4"
+                android:inputType="textPassword"
+                />
+
+            <LinearLayout
+                android:id="@+id/linelwrongpin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/alert"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Oh-oh! Invalid PIN!"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13.33sp"
+                    android:textColor="#EB7167"
+                    android:gravity="center_vertical|end"
+                    />
+                <TextView
+                    android:id="@+id/txtcounterst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="@string/InvalidPin"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13.33sp"
+                    android:textColor="#EB7167"
+                    android:gravity="center_vertical|start"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btndarkblue"
+                android:clickable="true"
+                android:text="@string/lblcontinue"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16.67sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_frmdlogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/dark">
+
+        <LinearLayout
+            android:id="@+id/linelvmain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblappname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="@string/app_name"
+                android:textColor="#ffffff"
+                android:textSize="27sp" />
+
+            <!-- Auto layout, variables, and unit scale are not yet supported -->
+            <TextView
+                android:id="@+id/lblsignin"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:text="@string/lblsignin"
+                android:textAppearance="@style/headings"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/lblemail"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:text="@string/lblemail"
+                android:textAppearance="@style/lblemail"
+                android:visibility="invisible"
+                />
+
+            <EditText
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pinidle"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:hint=" Enter E-mail id"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/lblpass"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:text="@string/lblpass"
+                android:textAppearance="@style/lblpass"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/txtpass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pinidle"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:hint=" Enter password"
+                android:inputType="textPassword"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/linelwrongpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/alert"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"/>
+
+                <TextView
+                    android:id="@+id/txtnotice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Oh-oh! Invalid Password!"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13.33sp"
+                    android:textColor="#EB7167"
+                    android:gravity="center_vertical|end"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btndarkblue"
+                android:text="@string/lbllogin"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16.67sp" />
+
+
+
+            <LinearLayout
+                android:id="@+id/linelh"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/linelight" />
+
+                <!-- OR Text -->
+                <TextView
+                    android:id="@+id/lblor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/lblor"
+                    android:textAppearance="@style/lblor" />
+
+                <!-- Empty View to take up right space -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/linelight" />
+            </LinearLayout>
+
+            <!-- Gone visibility of sign in with google button -->
+            <!-- Auto layout, variables, and unit scale are not yet supported -->
+            <RelativeLayout
+                android:id="@+id/butGoogleLogin"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/btngooglesignin"
+                android:layout_marginTop="30dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/google_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/google_text"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/google_logo" />
+
+                <!-- Button Text -->
+                <TextView
+                    android:id="@+id/google_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/continue_wi"
+                    android:textColor="#8A000000"
+                    android:textSize="20sp"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+
+            <!-- Auto layout, variables, and unit scale are not yet supported -->
+            <TextView
+                android:id="@+id/lnklblcreat"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/lnklblcreat"
+                android:textAppearance="@style/lnklblcreat"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
