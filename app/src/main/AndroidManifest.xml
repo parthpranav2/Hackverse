@@ -8,7 +8,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -33,9 +33,6 @@
         <activity
             android:name=".Offline"
             android:exported="false" />
-        <activity android:name=".BSFragmentEventData" />
-        <activity android:name=".BSFragmentFilter_addhackathon" />
-        <activity android:name=".BSFragmentFilter_activeevents" />
         <activity
             android:name=".Theme"
             android:exported="false" />

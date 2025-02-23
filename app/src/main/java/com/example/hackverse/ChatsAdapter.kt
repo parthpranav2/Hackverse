@@ -93,7 +93,7 @@ class ChatsAdapter(
                 holder.message.text = currentItem.Message
                 holder.committime.text = currentItem.CommitTime
 
-                if (currentItem.SenderId == currentItem.SuccedingMessageSenderId) {
+                if (position + 1 < chatList.size && chatList[position].SenderId == chatList[position+1].SenderId) {
                     holder.card.setBackgroundResource(R.drawable.chatbubble_notlast_recever)
                 }
             }
@@ -111,10 +111,12 @@ class ChatsAdapter(
                     holder.name.visibility = View.VISIBLE
                 }
 
-                if (currentItem.SenderId == currentItem.SuccedingMessageSenderId) {
+
+                if (position + 1 < chatList.size && chatList[position].SenderId == chatList[position+1].SenderId) {
                     holder.card.setBackgroundResource(R.drawable.chatbubble_notlast_sender)
                     holder.Ico.visibility = View.INVISIBLE
                 }
+
             }
         }
     }
